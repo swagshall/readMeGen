@@ -70,17 +70,18 @@ return inquirer
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
+    console.log('4')
     return writeFileAsync(fileName, data);
+    
 }
 
 // TODO: Create a function to initialize app
 function init() {
+    console.log('5')
     const info= askUser()
-
+    const contentFile=generateMarkdown(info)
     .then(function(data){
-
-            const contentFile=generateMarkdown(info)
-            console.log(data)
+            console.log(data);
             return writeToFile ("Test.md", contentFile);
 
     })
