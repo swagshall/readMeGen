@@ -5,11 +5,14 @@ const fs = require('fs');
 const generateMarkdown=require('./generateMarkdown');
 const util= require('util');
 
+console.log('1')
 
 const writeFileAsync = util.promisify(fs.writeFile);
+console.log('2')
 
 // TODO: Create an array of questions for user input
-inquirer
+function askUser (){
+return inquirer
 .prompt[
 // const questions = [];
       {
@@ -60,13 +63,10 @@ inquirer
         name: "contribution"
       }
     ]
+}
+    console.log('3')
   
-  
-    const askUser = () => {
-        return inquirer
-            .prompt();
-    } 
-  
+    
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -75,13 +75,13 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-   const info= askUser();
+    const info= askUser()
 
-    then((data) => {
+    .then(function(data){
 
-        const contentFile=generateMarkdown(info)
-        console.log(data)
-          return writeToFile("Test.md", contentFile);
+            const contentFile=generateMarkdown(info)
+            console.log(data)
+            return writeToFile ("Test.md", contentFile);
 
     })
 }
