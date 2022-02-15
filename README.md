@@ -16,4 +16,9 @@ GitHub: https://github.com/swagshall
 Email: wagshallshifra@gmail.com
 
 # Screenshot/Video 
+<img src=".\readMeGen.png" alt="screenshot 1">
+<img src=".\ReadMeGenGif.gif" alt="screenshot 1">
+
+
+
 
