@@ -40,26 +40,22 @@ function generateMarkdown(data) {
     ${data.instillation}
 
    
-    ## Usage
+  ## Usage
     ${data.usage}
 
-    ## License
-    "MIT: [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
-    "Apache 2.0: [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
-    "BSD 3-Clause: [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)",
-    "Unlicense: [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)"
+  ## License
+    
+    This project is licensed under the following license: ${data.license}
 
-    This project is licensed under the ${data.license} license.
+  ## Contributing 
+   ${data.contribution}
 
-    ## Contributing 
-    ${data.project}
-
-    ## Tests 
+  ## Tests 
     To run tests, run the following command:
     ${data.test}
 
-    ## Questions 
-    For any questions the owner of this repo can be contacted through thier GitHub: ${data.username}
+  ## Questions 
+    For any questions the owner of this repo can be contacted through thier GitHub:${data.username} 
 
 
 `;
