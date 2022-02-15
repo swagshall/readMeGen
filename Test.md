@@ -1,8 +1,8 @@
 
-  # l
+  # readMeGen
 
   ## Description
-    l
+    It creates really good read me files
 
   ## Table of Contents
     * [Installation](#installation)
@@ -14,28 +14,24 @@
   
   ## Installation 
     To install necessary dependencies, run the following command: 
-    l
+    npm i
 
    
-    ## Usage
-    l
+  ## Usage
+    node index.js
 
-    ## License
-    "MIT: [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
-    "Apache 2.0: [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
-    "BSD 3-Clause: [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)",
-    "Unlicense: [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)"
+  ## License
+    
+    This project is licensed under the following license: MIT
 
-    This project is licensed under the  license.
+  ## Contributing 
+  contact me through guthub
 
-    ## Contributing 
-    undefined
-
-    ## Tests 
+  ## Tests 
     To run tests, run the following command:
-    l
+    npm run test
 
-    ## Questions 
-    For any questions the owner of this repo can be contacted through thier GitHub: l
+  ## Questions 
+    For any questions the owner of this repo can be contacted through thier GitHub:swag 
 
 
