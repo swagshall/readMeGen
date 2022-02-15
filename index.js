@@ -13,7 +13,7 @@ console.log('2')
 // TODO: Create an array of questions for user input
 function askUser (){
 return inquirer
-.prompt[
+.prompt([
 // const questions = [];
       {
         type: "input",
@@ -38,7 +38,6 @@ return inquirer
           "MIT",
           "APACHE 2.0",
           "BSD 3",
-          "Other",
           "None"
         ]
       },
@@ -62,7 +61,7 @@ return inquirer
         message: "What does the user need to know about contributing to the repo?",
         name: "contribution"
       }
-    ]
+    ])
 }
     console.log('3')
   
@@ -78,13 +77,12 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     console.log('5')
-    const info= askUser()
-    const contentFile=generateMarkdown(info)
-    .then(function(data){
-            console.log(data);
-            return writeToFile ("Test.md", contentFile);
+    askUser().then(function(info){
 
-    })
+      const contentFile=generateMarkdown(info)
+      return writeToFile ("Test.md", contentFile);
+    });
+  
 }
 
 // Function call to initialize app
