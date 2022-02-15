@@ -5,10 +5,9 @@ const fs = require('fs');
 const generateMarkdown=require('./generateMarkdown');
 const util= require('util');
 
-console.log('1')
 
 const writeFileAsync = util.promisify(fs.writeFile);
-console.log('2')
+
 
 // TODO: Create an array of questions for user input
 function askUser (){
@@ -63,20 +62,20 @@ return inquirer
       }
     ])
 }
-    console.log('3')
+    
   
     
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    console.log('4')
+   
     return writeFileAsync(fileName, data);
     
 }
 
 // TODO: Create a function to initialize app
 function init() {
-    console.log('5')
+ 
     askUser().then(function(info){
 
       const contentFile=generateMarkdown(info)
